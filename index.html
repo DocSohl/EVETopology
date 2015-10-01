@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>EVE Topology</title>
+    <style type="text/css" media="screen">
+
+        .node {
+            stroke: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-opacity: .6;
+        }
+
+        body { background:#eee; margin:0 }
+        svg {
+            display:block; border:1px solid #ccc; position:absolute;
+            top:5%; left:5%; width:90%; height:90%; background:#fff;
+        }
+
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 </head>
 <body>
+<svg id="viewer">
+    <g id="links">
 
+    </g>
+    <g id="nodes">
+
+    </g>
+</svg>
+<script type="application/javascript" src="main.js"></script>
 </body>
 </html>
